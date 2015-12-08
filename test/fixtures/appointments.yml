@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  appointment_date: 2015-11-03 17:19:59
+  reminder: false
+  reason: MyText
+  doctor: 
+  pet: 
+
+two:
+  appointment_date: 2015-11-03 17:19:59
+  reminder: false
+  reason: MyText
+  doctor: 
+  pet: 

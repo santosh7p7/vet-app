@@ -1,0 +1,31 @@
+<span class="label label-important"><h1>Listing doctors</h1></span>
+
+<table class="table table-condensed table-hover table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>School</th>
+    <th>Years practice</th>
+    <th></th>
+  </tr>
+
+<% @doctors.each do |doctor| %>
+  <tr>
+    <td><%= doctor.name %></td>
+    <td><%= doctor.address %></td>
+    <td><%= doctor.city %></td>
+    <td><%= doctor.state %></td>
+    <td><%= doctor.zip %></td>
+    <td><%= doctor.school %></td>
+    <td><%= doctor.years_in_practice %></td>
+    <td><%= link_to '', edit_doctor_path(doctor), class: 'icon-pencil' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Doctor', new_doctor_path %>
